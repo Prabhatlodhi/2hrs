@@ -1,0 +1,117 @@
+
+==============FIRST CHILD LAST CHILD=================
+
+let unordered = document.querySelector('ul');
+
+// console.log(unordered.childNodes)
+// console.log(unordered.childElementCount)
+console.log(unordered.firstChild)
+console.log(unordered.lastChild)
+
+console.log(unordered.firstElementChild)
+console.log(unordered.lastElementChild)
+
+
+// let newEle = do
+// cument.createElement('li');
+
+// unordered.append(newEle);
+
+// newEle.innerText = "X-Men";
+
+// console.log(unordered.classList.contains('main_heading'));
+
+============GET AND SET STTRIBUTES====================
+
+newEle.setAttribute("class", 'list_items' )
+newEle.removeAttribute('class',"list_items");
+
+let heading = document.querySelector('#main_heading');
+
+console.log(heading.getAttribute('id'))
+
+
+==================HOW TO LOOP THROUGH THE NODELIST ELEMENTS===================
+
+const heading = document.querySelectorAll('li');
+
+ 
+
+for(let i=0; i<heading.length; i++){
+    heading[i].style.color = "red"
+}
+
+console.log(heading)
+
+
+
+https://mellow-basbousa-aa2e97.netlify.app
+
+=================SINGLE FUNCTION FOR ALL BUTTON============
+
+const BTN1 = document.getElementById('BTN1');
+const BTN2 = document.getElementById('BTN2');
+const BTN3 = document.getElementById('BTN3');
+
+BTN1.addEventListener('click', adding);
+BTN2.addEventListener('click', adding);
+BTN3.addEventListener('click', adding);
+
+function adding (event) {
+    alert('lolo')
+}
+
+
+=============IMP IF ELSE=================
+
+let revealbtn = document.querySelector('.revealbtn');
+
+let hidden = document.querySelector('.hidden');
+
+revealbtn.addEventListener('click', func)
+
+function func (){
+    if(hidden.classList.contains('hideelement')){
+        hidden.classList.toggle('hideelement')
+    }else{
+        hidden.classList.toggle('hideelement')
+    }
+}
+
+======================================
+
+===========SELECTING A SINGLE ELEMENT============
+
+document.querySelector('#sports').addEventListener('click', function(e){
+    console.log('football is clicked');
+
+    const target = e.target;
+
+    if(target.matches('li')){
+        target.style.backgroundColor = "lightgrey";
+        target.style.color = "black";
+    }
+});
+
+===========EVENT DELEGATION===================
+
+document.querySelector('#sports').addEventListener('click', function(e){
+    console.log(e.target.getAttribute('id') + " is clicked");
+
+    const target = e.target;
+
+    if(target.matches('li')){
+        target.style.backgroundColor = "lightgrey";
+    }
+});
+
+const sports = document.querySelector('#sports');
+const newSports = document.createElement('li');
+
+newSports.innerText = 'rugby';
+newSports.setAttribute('id','rugby');
+
+sports.appendChild(newSports);
+
+====================================================
+

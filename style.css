@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-align: center;
+    background-color: lightgreen;
+}
+
+
+.text_area{
+    border: 1px solid red;
+    max-width: 200px;
+    margin: 50px auto;
+    overflow-wrap: break-word;
+}
+
+.person{
+    margin: 5%;
+}
+
+#newQuote{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#newQuote:active{
+ background-color: aqua;
+}
+
+/* ul li{
+    margin: 5%;
+    background-color: brown;
+    font-size: 30px;
+    width: max-content;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.hidden{
+    border: 2px solid red;
+    padding: 50px;
+}
+
+.hideelement{
+    display: none;
+}
+ 
+
+
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 5%;
+}
+
+.boxone, .boxtwo, .boxthree{
+    width: 30%;
+    height: 40%;
+    border: 2px solid red;
+    text-align: center;
+}
+
+button{
+    margin: 15%;
+} */
+
+
+
+/* li{
+    margin-left: 5%;
+     
+}
+
+.list_items{
+    margin: 2%;
+    background-color: aqua;
+    width: max-content;
+}
+
+.kiju{
+    font-size: 45px;
+} */
